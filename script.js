@@ -24,13 +24,15 @@ class Toc {
 
     textSource.forEach((div) => {
       div.querySelectorAll(this.headingTypes.join(",")).forEach((heading) => {
-        const id = `toc-h${count++}`;
+        const id = `h${count++}`;
         const level = parseInt(heading.tagName.substring(1)) - 1;
 
         heading.id = id;
-        html += `<li class='toc-list-item' style="margin-left: ${
+        html += `<li class='toc-list-item toc-list-item-${id}' style="margin-left: ${
           level * this.indentSize
-        }px;"><a href="#${id} class='${id}'">${heading.textContent}</a></li>`;
+        }px;"><a href="#${id} class='toc-h${id}'">${
+          heading.textContent
+        }</a></li>`;
       });
     });
 
