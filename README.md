@@ -4,7 +4,7 @@ Just a script to simplify creating table of contents in Webflow.
 
 ## Init
 
-```
+```javascript
 <script></script>
 
 <script>
