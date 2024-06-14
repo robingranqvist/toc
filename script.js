@@ -19,7 +19,7 @@ class Toc {
 
   generate() {
     const textSource = document.querySelectorAll(`.${this.textSource}`);
-    let html = "<ul class='toc'>";
+    let html = "<div class='toc'>";
     let count = 0;
 
     textSource.forEach((div) => {
@@ -28,11 +28,11 @@ class Toc {
         const level = parseInt(heading.tagName.substring(1)) - 1;
 
         heading.id = id;
-        html += `<li class='toc-list-item toc-list-item-${id}' style="margin-left: ${
+        html += `<div class='toc-list-item toc-list-item-${id}' style="margin-left: ${
           level * this.indentSize
         }px;"><a href="#${id} class='toc-heading toc-h${id}'">${
           heading.textContent
-        }</a></li>`;
+        }</a></div>`;
       });
     });
 
