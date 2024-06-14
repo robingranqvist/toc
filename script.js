@@ -30,7 +30,7 @@ class Toc {
         heading.id = id;
         html += `<div class='toc-item toc-item-${id}' style="margin-left: ${
           level * this.indentSize
-        }px;"><a href="#${id} class='toc-heading toc-h${id}'">${
+        }px;"><a href="#${id}" class="toc-heading toc-h${id}">${
           heading.textContent
         }</a></div>`;
       });
