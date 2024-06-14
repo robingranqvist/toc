@@ -7,7 +7,7 @@ Just a script to simplify creating table of contents in Webflow.
 ### Import
 
 ```javascript
-<script src="https://cdn.jsdelivr.net/gh/robingranqvist/toc@1.0.0/script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/robingranqvist/toc@1.0.4/script.js"></script>
 ```
 
 ### Init
