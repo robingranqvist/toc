@@ -41,16 +41,16 @@ The pixel value of indentation you want between your headings in your table of c
 
 ## Style your TOC
 
-Create a mock table of contents using the following classes in Webflow. These can be styled however you want.
+Create a mock table of contents using the following classes in Webflow. These can be styled however you want, and will then be replaced by the generated toc with the same style(s).
 
 ### toc
 
-The main list.
+The main table of contents list.
 
-### toc-list-item
+### toc-item
 
-A list item.
+An item of the toc list.
 
 ### toc-heading
 
-A heading.
+A heading / link.
