@@ -4,11 +4,13 @@ Just a script to simplify creating table of contents in Webflow.
 
 ## Init
 
+```
 <script></script>
 
 <script>
   new Toc("your-rich-text-class", "your-toc-wrapper-class", ["h1", "h2", "h3", "h4", "h5", "h6"], 20);
 </script>
+```
 
 ## textSource (string)
 
